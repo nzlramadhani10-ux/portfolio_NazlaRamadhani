@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F4F7FB;
+    color: #333333;
+    line-height: 1.6;
+}
+
+nav {
+    background-color: #274C77;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #A9D6F5;
+}
+
+section {
+    padding: 40px 10%;
+    text-align: center;
+}
+
+#home {
+    background-color: #DCE8F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+}
+
+.home-text {
+    max-width: 500px;
+}
+
+.home-text h1 {
+    color: #274C77;
+    font-size: 40px;
+}
+
+.home-text h3 {
+    font-weight: normal;
+}
+
+.home-image img {
+    width: 230px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #274C77;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #1B365D;
+}
+
+h2, .card h3 {
+    color: #274C77;
+}
+
+#about p, #contact p {
+    max-width: 650px;
+    margin: 10px auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 230px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(39, 76, 119, 0.12);
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #274C77;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 700px) {
+    #home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-text h1 {
+        font-size: 32px;
+    }
+
+    .home-image img {
+        width: 180px;
+        height: 220px;
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
